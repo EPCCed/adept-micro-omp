@@ -20,6 +20,12 @@ limitations under the License.
 
 This README file introduces the different benchmarks in this suite, including, where necessary details on implementation and usage.
 
+## Citation & Further Information
+If you would like to cite this work, please cite:
+Nick Johnson et al., "Adept Deliverable D2.3 - Updated Report on Adept Benchmarks", September 2015.
+available at http://www.adept-project.eu/images/Deliverables/Adept%20D2.3.pdf
+
+
 ## Basic Operations
 
 A benchmark to measure the basic operations (add, sub, mult, div) on scalar data types (int, long, float, double).
