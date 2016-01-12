@@ -64,7 +64,7 @@ double elapsed_time_hr(struct timespec t1, struct timespec t2, char * title){
   printf("|\n");
   printf("------------------------------------------------------------------------------------\n");
 
-  return 1.0; // Compatibility
+  return elapsed_duration;
 }
 
 void loop_timer(unsigned long limit){

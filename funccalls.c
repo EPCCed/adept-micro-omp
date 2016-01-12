@@ -61,6 +61,15 @@ double recur_piapprox(int index, unsigned int n){
 
 int function_calls(unsigned int N){
 
+  /*
+   * If size (N) is < 10^6 the error on pi is too high in normal mode and causes misleading output.
+   * The computational pattern is correct, but a result with high error may cause users to believe something
+   * is wrong. So, set the minimum to 10^6.
+   */
+  if (N < 1000000){
+    N = 1000000;
+  }
+
   double pi, exactpi;
   int i;
 
@@ -119,7 +128,7 @@ int function_calls(unsigned int N){
   exactpi = 4.0*atan(1.0);
 
   /* verify result */
-  /* printf("pi = %f, %% error = %f\n", pi, fabs(100.0*(pi-exactpi)/exactpi));*/ 
+  printf("pi = %f, %% error = %f\n", pi, fabs(100.0*(pi-exactpi)/exactpi));
 
   return 0;
 
